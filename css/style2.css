@@ -1,0 +1,524 @@
+.rates{
+    width: 100%;
+    padding: 7px 0;
+    margin-bottom: -10px;
+    background: #ffe893;
+}
+.rates span{
+    font-weight: 450;
+    margin-right: 10px;
+    color: #000;
+}
+.titlepage h2 {
+  font-weight: 500;
+  font-size: 3em;
+}
+.navbar {
+  transform: translateY(-20px);
+}
+.logo_section {
+  display: inline-block;
+  width: 70px;
+  max-width: 70px;
+  height: 70px;
+  padding: 0;
+}
+.logo_section * {
+  width: 100%;
+  height: 100%;
+}
+.logo_section img {
+  object-position: center;
+  object-fit: contain;
+}
+.main-menu ul > li {
+  position: relative;
+}
+.text-bg h1 {
+  color: #872500;
+}
+.dropdown-toggle {
+  color: #fff;
+}
+.aboutUs {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.aboutUs h1 {
+  font-size: 3em;
+}
+.aboutUs p {
+  font-size: 1em;
+  font-weight: 420;
+  line-height: 26px;
+  color: rgb(29, 29, 29);
+  text-indent: -50px;
+}
+.aboutUs p span {
+  font-size: 2.5em;
+  font-weight: 450;
+  color: #000;
+}
+.aboutUs img {
+  width: 100%;
+}
+.categories_block {
+  padding: 50px;
+}
+.categories_block h1 {
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+  margin: 40px 0;
+}
+.gold,
+.silver,
+.gift {
+  margin: 30px 0;
+}
+.gold h2,
+.silver h2,
+.gift h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+  left: 50px;
+}
+.gold .cardBox,
+.silver .cardBox,
+.gift .cardBox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.gold .cardBox .card,
+.silver .cardBox .card,
+.gift .cardBox .card {
+  width: 20em;
+  height: 20em;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #fff;
+  border-left-color: #aaa6;
+  border-top-color: #aaa6;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease-in-out;
+}
+.gold .cardBox .card:hover,
+.silver .cardBox .card:hover,
+.gift .cardBox .card:hover {
+  transform: scale(1.15);
+}
+.gold .cardBox .card img,
+.silver .cardBox .card img,
+.gift .cardBox .card img {
+  width: 10em;
+  height: 10em;
+  margin: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.gallery {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gallery h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.gallery .swiper-container {
+  width: 100%;
+  height: 80%;
+  margin-top: 30px;
+}
+.gallery .swiper-container .swiper-slide {
+  position: relative;
+}
+.gallery .swiper-container .swiper-slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 2;
+}
+
+.gallery .swiper-container .swiper-slide img {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  float: right;
+  object-fit: cover;
+  z-index: 1;
+}
+.gallery .swiper-container .swiper-slide p {
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 50px;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: 600;
+  max-width: 500px;
+  z-index: 3;
+}
+.gallery .swiper-container .swiper-pagination {
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  width: fit-content;
+  height: fit-content;
+}
+.gallery .swiper-container .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #ddd;
+  opacity: 0.4;
+}
+.gallery .swiper-container .swiper-pagination-bullet-active {
+  width: 14px;
+  height: 14px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 1;
+}
+.gallery .swiper-container .controls {
+  width: 150px;
+  position: absolute;
+  bottom: 100px;
+  left: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery .swiper-container .controls .swiper-button-next,
+.gallery .swiper-container .controls .swiper-button-prev {
+  position: relative;
+  top: 50%;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px 17px;
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 50%;
+  outline: none;
+  border: 3px solid #fff;
+}
+.gallery .swiper-container .controls .swiper-button-next:hover,
+.gallery .swiper-container .controls .swiper-button-prev:hover {
+  color: #505050;
+  border: 3px solid #505050;
+}
+.gallery .swiper-container .controls .swiper-button-next::after,
+.gallery .swiper-container .controls .swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: 700;
+  transform: translateX(-2px);
+}
+.gallery .swiper-container .controls .swiper-button-next::after {
+  transform: translateX(2px);
+}
+.contact {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.contact .contact .send {
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 60px;
+  margin: 0 auto;
+  border-radius: 30px;
+  display: block;
+  outline: none;
+  border: none;
+}
+.footer h2 {
+  font-weight: 500;
+}
+.footer ul li {
+  width: fit-content;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  transition: 0.1s;
+}
+.footer ul li:hover {
+  text-indent: 15px;
+}
+.footer .container .row .col-md-6:nth-child(2) ul li {
+  position: relative;
+  margin: 10px 0;
+  line-height: 20px;
+}
+.footer ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer ul li span {
+  position: relative;
+  left: 0px;
+  top: -5px;
+  font-size: 12px;
+  color: #111;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: 0.1s;
+}
+.footer ul li a svg {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.footer .container .row .col-md-6:nth-child(2) ul li:hover {
+  text-indent: 0;
+  color: #007aff;
+}
+.footer .container .row .col-md-6:nth-child(2) ul .social-links {
+  padding: 0;
+  margin-top: 15px;
+  flex-direction: row;
+}
+.footer .container .row .col-md-6:nth-child(2) ul .social-links a {
+  margin-right: 10px;
+}
+.footer .container .row .col-md-6:nth-child(2) ul .social-links a svg {
+  font-size: 28px;
+}
+.copyright {
+  margin-bottom: -24px;
+}
+
+@media screen and (max-width: 1000px) {
+  .gold .cardBox .card,
+  .silver .cardBox .card,
+  .gift .cardBox .card {
+    width: 18em;
+    height: 18em;
+    margin: 20px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+  }
+  .gold .cardBox .card img,
+  .silver .cardBox .card img,
+  .gift .cardBox .card img {
+    width: 10em;
+    height: 10em;
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-bg {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-bg h1 {
+    padding: 0;
+  }
+  .aboutUs {
+    display: block;
+    padding: 20px;
+    height: fit-content;
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+  .aboutUs * {
+    overflow: hidden;
+  }
+  .aboutUs .container {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+  }
+  .aboutUs h1 {
+    text-align: center;
+  }
+  .aboutUs p {
+    text-indent: 0px;
+  }
+  .aboutUs p span {
+    font-size: 2em;
+  }
+  .aboutUs img {
+    width: 100%;
+  }
+  .aboutUs .container .row {
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .aboutUs .container .row .col {
+    flex: 0.5;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .categories_block {
+    padding: 10px;
+    height: fit-content;
+    min-height: 100vh;
+  }
+  .categories_block h1 {
+    margin: 0;
+  }
+  .gold,
+  .silver,
+  .gift {
+    margin: 0;
+  }
+  .gold h2,
+  .silver h2,
+  .gift h2 {
+    left: 30px;
+    font-size: 2em;
+    font-weight: 440;
+  }
+  .gold .cardBox .card,
+  .silver .cardBox .card,
+  .gift .cardBox .card {
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #0003;
+  }
+  .gold .cardBox .card:hover,
+  .silver .cardBox .card:hover,
+  .gift .cardBox .card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  .contact {
+    padding: 30px 0;
+  }
+  .titlepage {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  /* media 480px */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo_section {
+    display: inline-block;
+    width: 70px;
+    max-width: 70px;
+    height: 70px;
+    padding: 0;
+  }
+  .logo_section * {
+    width: 100%;
+    height: 100%;
+  }
+  .logo_section img {
+    object-position: center;
+    object-fit: contain;
+  }
+  .logo_section .logo {
+    padding-bottom: 0px;
+  }
+  .menu_section {
+    width: 70px;
+    height: 70px;
+  }
+  .mean-container .mean-bar {
+    background: rgb(0, 0, 0, 0);
+  }
+  .mean-container a.meanmenu-reveal {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+  .mean-container .mean-nav {
+    margin-top: 0px;
+    position: fixed;
+    top: 100%;
+    width: 100vw;
+    height: fit-content;
+    left: 0;
+  }
+  .mean-container .mean-nav ul {
+    height: fit-content;
+    overflow: visible;
+  }
+  .text-bg h1 {
+    padding-top: 18px !important;
+    font-size: 37px;
+    line-height: 51px;
+    padding-bottom: 18px;
+  }
+  .gallery .swiper-container .swiper-slide::before {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .gallery .swiper-container .swiper-slide img {
+    width: 100%;
+  }
+  .gallery .swiper-container .controls {
+    bottom: 60px;
+    left: 20px;
+  }
+  .gallery .swiper-container .controls .swiper-button-next:hover,
+  .gallery .swiper-container .controls .swiper-button-prev:hover {
+    color: #aaa;
+    border: 3px solid #aaa;
+  }
+  .gallery .swiper-container .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+  }
+  .gallery .swiper-container .swiper-pagination-bullet {
+    background: #000;
+    opacity: 0.7;
+  }
+  .gallery .swiper-container .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+  }
+  footer .footer {
+    padding: 50px 0;
+  }
+  footer .footer .container .row .col-md-6 {
+    margin: 20px;
+    margin-top: 0;
+  }
+  .copyright {
+    margin-bottom: -80px;
+  }
+}
